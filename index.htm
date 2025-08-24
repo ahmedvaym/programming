@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Port<span>folio</span></div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="typewriter" id="typewriter"></span></h1>
+                <p>A Creative Web Developer & UI/UX Designer</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Alex, a passionate web developer with over 5 years of experience creating beautiful and functional websites. I specialize in front-end development and have a keen eye for design.</p>
+                    <p>My approach combines technical expertise with creative thinking to deliver solutions that not only look great but also provide exceptional user experiences. I'm constantly learning and adapting to new technologies to stay at the forefront of web development.</p>
+                    <p>When I'm not coding, you can find me hiking, reading, or experimenting with photography. I believe in maintaining a healthy work-life balance to keep my creativity flowing.</p>
+                </div>
+                <div class="about-image">
+                    <img src="My-removebg copy.png" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, and modern HTML5 features.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design, Flexbox, Grid, animations, and preprocessors.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, AJAX, and modern frameworks.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Component-based architecture, hooks, and state management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with product filtering and cart functionality.</p>
+                        <a href="#" class="project-link view-details" data-project="1">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w极速=800&q=80" alt="Travel Blog">
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Blog</h3>
+                        <p>An interactive travel blog with location-based content and user engagement features.</p>
+                        <a href="#" class="project-link view-details" data-project="2">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytics Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>A data visualization dashboard with interactive charts and real-time updates.</p>
+                        <a href="#" class="project-link view-details" data-project="3">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Project 1 Modal -->
+    <div id="project-1-modal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">&times;</div>
+            <div class="modal-header">
+                <div class="modal-slideshow">
+                    <div class="modal-slide active">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project">
+                    </div>
+                    <div class="modal-slide">
+                        <img src="https://images.unsplash.com/photo-1563014959-7aaa83350992?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project Detail">
+                    </div>
+                    <div class="modal-slide">
+                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-commerce Project Mobile">
+                    </div>
+                    <div class="modal-slide-nav">
+                        <div class="slide-nav-btn prev-slide"><i class="fas fa-chevron-left"></i></div>
+                        <div class="slide-nav-btn next-slide"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="modal-dots">
+                        <div class="modal-dot active"></div>
+                        <div class="modal-dot"></div>
+                        <div class="modal-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>E-commerce Website</h3>
+                <p>This e-commerce platform was built with React and Node.js, featuring a complete shopping experience with product listings, detailed views, shopping cart, and checkout process. The design focuses on user experience with intuitive navigation and responsive layout.</p>
+                
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>React, Node.js, MongoDB, Stripe API</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>E-commerce</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>June 2023</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>Fashion Retailer</p>
+                    </div>
+                </div>
+                
+                <p>The project involved creating a seamless shopping experience across devices, with particular attention to performance optimization. I implemented lazy loading for images, efficient state management, and a secure payment processing system.</p>
+                
+                <a href="#" class="btn">Visit Website</a>
+                <a href="#" class="video-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <i class="fas fa-play"></i> Watch Project Video
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div id="project-2-modal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">&times;</div>
+            <div class="modal-header">
+                <div class="modal-slideshow">
+                    <div class="modal-slide active">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel Blog">
+                    </div>
+                    <div class="modal-slide">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel Blog Detail">
+                    </div>
+                    <div class="modal-slide">
+                        <video controls>
+                            <source src="https://player.vimeo.com/external/370331493.sd.mp4?s=ada720b5d35a7d7e8d7c2f6e7f3a0e6e6e8e0e3e6&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="modal-slide-nav">
+                        <div class="slide-nav-btn prev-slide"><i class="fas fa-chevron-left"></i></div>
+                        <div class="slide-nav-btn next-slide"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="modal-dots">
+                        <div class="modal-dot active"></div>
+                        <div class="modal-dot"></div>
+                        <div class="modal-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>Travel Blog Platform</h3>
+                <p>This travel blog was designed for adventure enthusiasts to share their experiences. It includes location-based content, interactive maps, user profiles, and social sharing capabilities. The design emphasizes beautiful imagery and easy content discovery.</p>
+                
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>HTML5, CSS3, JavaScript, WordPress</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>Blog / Content</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>March 2023</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>Travel Enthusiasts Community</p>
+                    </div>
+                </div>
+                
+                <p>The platform features a custom WordPress theme with advanced customization options. I implemented a responsive design that highlights photography, along with performance optimizations to ensure fast loading times even with high-resolution images.</p>
+                
+                <a href="#" class="btn">Visit Website</a>
+                <a href="#" class="video-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <i class="fas fa-play"></i> Watch Project Video
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div id="project-3-modal" class="modal">
+        <div class="modal-content">
+            <div class="close-modal">&times;</div>
+            <div class="modal-header">
+                <div class="modal-slideshow">
+                    <div class="modal-slide active">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52极速f?ixlib=rb-4.0.3&auto=format&极速fit=crop&w=800&q=80" alt="Analytics Dashboard">
+                    </div>
+                    <div class="modal-slide">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Analytics Dashboard Detail">
+                    </div>
+                    <div class="modal-slide">
+                        <video controls>
+                            <source src="https://player.vimeo.com/external/370331493.sd.mp4?s=ada720b5d35a7d7e8d7c2f6e7f3a0e6e6e8e0e3e6&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="modal-slide-nav">
+                        <div class="slide-nav-btn prev-slide"><i class="fas fa-chevron-left"></i></div>
+                        <div class="slide-nav-btn next-slide"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="modal-dots">
+                        <div class="modal-dot active"></div>
+                        <div class="modal-dot"></div>
+                        <div class="modal-dot"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>Analytics Dashboard</h3>
+                <p>This analytics dashboard provides businesses with insights into their performance metrics. It features interactive data visualizations, customizable reports, and real-time data updates. The clean interface makes complex data easily understandable.</p>
+                
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>React, D3.js, Firebase, Material UI</极速p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>Data Visualization</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>January 2023</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>Enterprise Solutions Inc.</p>
+                    </div>
+                </div>
+                
+                <p>The dashboard was built with a focus on performance when handling large datasets. I implemented efficient data fetching strategies and optimized rendering for smooth interactions. The modular design allows clients to customize their view based on the metrics most important to them.</p>
+                
+                <a href="#" class="btn">Visit Website</a>
+                <a href="#" class="video-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <i class="fas fa-play"></i> Watch Project Video
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="close-modal">&times;</div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <iframe id="project-video" width="100%" height="400" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <div class="container">
+            <h2>Connect With Me</h2>
+            <p>Follow me on social media to stay updated with my latest projects and insights.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </极速div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ahmed Vaseem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Typewriter Effect
+        const typewriterElement = document.getElementById('typewriter');
+        const name = "Ahmed Vaseem";
+        let i = 0;
+        let typingSpeed = 100;
+        let deletingSpeed = 50;
+        let pauseTime = 2000;
+        
+        function typeWriter() {
+            if (i < name.length) {
+                typewriterElement.innerHTML += name.charAt(i);
+                i++;
+                setTimeout(typeWriter, typingSpeed);
+            } else {
+                setTimeout(deleteText, pauseTime);
+            }
+        }
+        
+        function deleteText() {
+            if (typewriterElement.innerHTML.length > 0) {
+                typewriterElement.innerHTML = typewriterElement.innerHTML.slice(0, -1);
+                setTimeout(deleteText, deletingSpeed);
+            } else {
+                i = 0;
+                setTimeout(typeWriter, 500);
+            }
+        }
+        
+        // Start the typewriter effect when page loads
+        window.addEventListener('load', () => {
+            setTimeout(typeWriter, 1000);
+        });
+        
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Project Modals
+        const viewDetailsButtons = document.querySelectorAll('.view-details');
+        const modals = document.querySelectorAll('.modal');
+        const closeModalButtons = document.querySelectorAll('.close-modal');
+        const videoButtons = document.querySelectorAll('.video-btn');
+        const videoModal = document.getElementById('video-modal');
+        const projectVideo = document.getElementById('project-video');
+        
+        viewDetailsButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const projectId = button.getAttribute('data-project');
+                const modal = document.getElementById(`project-${projectId}-modal`);
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                
+                // Start automatic slideshow
+                startSlideshow(modal);
+            });
+        });
+        
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modals.forEach(modal => {
+                    modal.style.display = 'none';
+                    // Pause any videos when closing modal
+                    const videos = modal.querySelectorAll('video');
+                    videos.forEach(video => {
+                        video.pause();
+                    });
+                });
+                document.body.style.overflow = 'auto';
+                
+                // Clear the video source when closing modal
+                projectVideo.src = '';
+            });
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                modals.forEach(modal => {
+                    modal.style.display = 'none';
+                    // Pause any videos when closing modal
+                    const videos = modal.querySelectorAll('video');
+                    videos.forEach(video => {
+                        video.pause();
+                    });
+                });
+                document.body.style.overflow = 'auto';
+                
+                // Clear the video source when closing modal
+                projectVideo.src = '';
+            }
+        });
+        
+        // Video button functionality
+        videoButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const videoUrl = button.getAttribute('data-video');
+                projectVideo.src = videoUrl;
+                videoModal.style.display = 'block';
+            });
+        });
+        
+        // Automatic Slideshow Functionality
+        function startSlideshow(modal) {
+            const slides = modal.querySelectorAll('.modal-slide');
+            const dots = modal.querySelectorAll('.modal-dot');
+            let currentSlide = 0;
+            
+            // Reset all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show first slide
+            slides[0].classList.add('active');
+            dots[0].classList.add('active');
+            
+            // Set up automatic slideshow
+            const slideInterval = setInterval(() => {
+                // Hide current slide
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                
+                // Move to next slide
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Show next slide
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }, 4000); // Change slide every 4 seconds
+            
+            // Manual navigation
+            const prevBtn = modal.querySelector('.prev-slide');
+            const nextBtn = modal.querySelector('.next-slide');
+            
+            prevBtn.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+                
+                // Restart automatic slideshow after manual interaction
+                setTimeout(() => startSlideshow(modal), 10000);
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+                
+                // Restart automatic slideshow after manual interaction
+                setTimeout(() => startSlideshow(modal), 10000);
+            });
+            
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    
+                    slides[currentSlide].classList.remove('active');
+                    dots[currentSlide].classList.remove('active');
+                    
+                    currentSlide = index;
+                    
+                    slides[currentSlide].classList.add('active');
+                    dots[currentSlide].classList.add('active');
+                    
+                    // Restart automatic slideshow after manual interaction
+                    setTimeout(() => startSlideshow(modal), 10000);
+                });
+            });
+        }
+        
+        // Scroll to top functionality
+        const scrollBtn = document.querySelector(".scroll-to-top");
+        
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add("active");
+            } else {
+                scrollBtn.classList.remove("active");
+            }
+        });
+        
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
